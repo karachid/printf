@@ -1,5 +1,10 @@
 #include "main.h"
-#include <stdio.h>
+
+/**
+ * print_character - prints a string
+ * @ap: list of args
+ * Return: int (1 since it prints only one char)
+ */
 
 int print_character(va_list ap)
 {

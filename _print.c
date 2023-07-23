@@ -2,9 +2,8 @@
 
 /**
  * _printf - acts as printf of libc
- * format: string that shows what and how to print
- * 
- * Return: number of characters the functios printed 
+ * @format: string that shows what and how to print
+ * Return: number of characters the functios printed
  */
 
 int _printf(const char *format, ...)
@@ -15,7 +14,7 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 
-	for (c = (char*)format ; *c ; c++)
+	for (c = (char *)format ; *c ; c++)
 	{
 		if (*c == '\\')
 		{
@@ -29,11 +28,12 @@ int _printf(const char *format, ...)
 		{
 			c++;
 			int (*f)(va_list) = getSpecifier(c);
+
 			count += f(args);
 			continue;
 		}
 		count += _putchar(*c);
 	}
 	va_end(args);
-	return count;
+	return (count);
 }
