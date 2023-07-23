@@ -9,35 +9,35 @@
 
 int main(void)
 {
-    int len = 0;
-    int len2 = 0;
+	int len = 0;
+	int len2 = 0;
+	char myc = 'a';
+	char *str = "engineer";
 
-    char myc = 'a';
-    char *str = "engineer";
+	len = _printf("Let's try to printf a simple sentence.\n");
+	len2 = printf("Let's try to printf a simple sentence.\n");
 
-    len = _printf("Let's try to printf a simple sentence.\n");
-    len2 = printf("Let's try to printf a simple sentence.\n");
-
-
-    printf("\n %d \n", len);
-    printf("\n %d \n", len2);
+	printf("\n %d \n", len);
+	printf("\n %d \n", len2);
 
 
-    len = _printf("my char is : %c\n", myc);
-    len2 = printf("my char is : %c\n", myc);
+	len = _printf("my char is : %c\n", myc);
+	len2 = printf("my char is : %c\n", myc);
 
-    printf("\n %d \n", len);
-    printf("\n %d \n", len2);
+	printf("\n %d \n", len);
+	printf("\n %d \n", len2);
 
-    len = _printf("my string is : %s\n", str);
-    len2 = printf("my string is : %s\n", str);
+	len = _printf("my string is : %s\n", str);
+	len2 = printf("my string is : %s\n", str);
 
-    printf("\n _printf string case : %d \n", len);
-    printf("\n printf string case : %d \n", len2);
+	printf("\n _printf string case : %d \n", len);
+	printf("\n printf string case : %d \n", len2);
 
-    len = printf("my percent is : %%\n");
-    len2 = _printf("my percent is : %%\n");
+	len = printf("my percent is : %%\n");
+	len2 = _printf("my percent is : %%\n");
 
-    printf("\n %d \n", len);
-    printf("\n %d \n", len2);
+	printf("\n %d \n", len);
+	printf("\n %d \n", len2);
+
+	return (0);
 }

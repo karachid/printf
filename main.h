@@ -3,6 +3,7 @@
 
 #include <stdarg.h>
 #include <unistd.h>
+#include <stddef.h>
 
 /**
  * struct specifier - specifier data structure

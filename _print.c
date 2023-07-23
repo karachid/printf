@@ -11,8 +11,12 @@ int _printf(const char *format, ...)
 	int  count = 0;
 	char *c;
 	va_list args;
+	int (*f)(va_list);
 
 	va_start(args, format);
+
+	if (format == NULL)
+		return (-1);
 
 	for (c = (char *)format ; *c ; c++)
 	{
@@ -26,9 +30,8 @@ int _printf(const char *format, ...)
 		}
 		if (*c == '%')
 		{
-			c++;
-			int (*f)(va_list) = getSpecifier(c);
-
+			c++;		
+			f = getSpecifier(c);
 			count += f(args);
 			continue;
 		}

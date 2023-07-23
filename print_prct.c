@@ -8,5 +8,6 @@
 
 int print_prct(va_list ap)
 {
+	(void)ap;
 	return (_putchar('%'));
 }
