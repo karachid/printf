@@ -2,5 +2,6 @@
 
 int print_prct(va_list ap)
 {
-	return (0);
+
+	return (_putchar('%'));
 }

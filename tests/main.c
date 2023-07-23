@@ -34,4 +34,10 @@ int main(void)
 
     printf("\n _printf string case : %d \n", len);
     printf("\n printf string case : %d \n", len2);
- }
+
+    len = printf("my percent is : %%\n");
+    len2 = _printf("my percent is : %%\n");
+
+    printf("\n %d \n", len);
+    printf("\n %d \n", len2);
+}
