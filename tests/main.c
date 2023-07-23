@@ -29,7 +29,9 @@ int main(void)
     printf("\n %d \n", len);
     printf("\n %d \n", len2);
 
-    //_printf("1 - %s", str);
-    //printf("2 - %s", str);
+    len = _printf("my string is : %s\n", str);
+    len2 = printf("my string is : %s\n", str);
 
+    printf("\n _printf string case : %d \n", len);
+    printf("\n printf string case : %d \n", len2);
  }

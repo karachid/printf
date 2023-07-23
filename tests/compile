@@ -1,1 +1,3 @@
-gcc main.c ../*c -I..
+#!/bin/bash
+rm -rf prog
+gcc main.c ../*c -I.. -o prog

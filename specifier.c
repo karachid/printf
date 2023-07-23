@@ -6,6 +6,7 @@ int (*getSpecifier(char* s))(va_list ap)
 	int i = 0;
 	t_specifier specifiers[] = {
 		{"c", print_character},
+		{"s", print_string},
 		{NULL, NULL}
 	};
 
