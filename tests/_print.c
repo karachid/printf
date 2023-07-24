@@ -14,10 +14,12 @@ int _printf(const char *format, ...)
 	int (*f)(va_list);
 
 	va_start(args, format);
+
 	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
 	if (format[0] == '%' && format[1] == ' ' && !format[2])
 		return (-1);
+
 	for (c = (char *)format ; *c ; c++)
 	{
 		if (*c == '\\')
