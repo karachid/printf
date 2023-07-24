@@ -35,7 +35,12 @@ int _printf(const char *format, ...)
 			c++;
 			f = getSpecifier(c);
 			if (f == NULL)
-				return (-1);
+			{
+				count += _putchar('%');
+				count += _putchar(*c);
+				continue;
+			
+			}
 			count += f(args);
 			continue;
 		}

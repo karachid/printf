@@ -14,6 +14,9 @@ int print_string(va_list ap)
 
 	s = va_arg(ap, char *);
 
+	if (s == NULL)
+		s = "(null)";
+	
 	while (s[i] != '\0')
 	{
 		count += _putchar(s[i]);
