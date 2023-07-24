@@ -20,14 +20,6 @@ int _printf(const char *format, ...)
 		return (-1);
 	for (c = (char *)format ; *c ; c++)
 	{
-		if (*c == '\\')
-		{
-			if (*(c++) == 'n')
-			{
-				count += _putchar(*c);
-				continue;
-			}
-		}
 		if (*c == '%')
 		{
 			if (*(++c) == '\0')
