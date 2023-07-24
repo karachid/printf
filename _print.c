@@ -22,9 +22,9 @@ int _printf(const char *format, ...)
 	{
 		if (*c == '\\')
 		{
-			if (*(c++) == 'n')
+			if (*(++c) == 'n')
 			{
-				count += _putchar(*c);
+				count += _putchar('\n');
 				continue;
 			}
 		}
