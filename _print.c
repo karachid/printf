@@ -34,6 +34,8 @@ int _printf(const char *format, ...)
 		{
 			c++;
 			f = getSpecifier(c);
+			if (f == NULL)
+				return (-1);
 			count += f(args);
 			continue;
 		}

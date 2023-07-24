@@ -14,15 +14,15 @@ int main(void)
 	char myc = 'a';
 	char *str = "engineer";
 
-	len = _printf("Let's try to printf a simple sentence.\n");
-	len2 = printf("Let's try to printf a simple sentence.\n");
+	len = _printf("Let's try \"to\" printf a simple sentence.\n");
+	len2 = printf("Let's try \"to\" printf a simple sentence.\n");
 
 	printf("\n %d \n", len);
 	printf("\n %d \n", len2);
 
 
-	len = _printf("my char is : %c\n", myc);
-	len2 = printf("my char is : %c\n", myc);
+	len = _printf("my char is : %c and my string is : %s and here is a percent %%\n", myc, str);
+	len2 = printf("my char is : %c and my string is : % s and here is a percent %%\n", myc, str);
 
 	printf("\n %d \n", len);
 	printf("\n %d \n", len2);
