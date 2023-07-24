@@ -30,10 +30,15 @@ int _printf(const char *format, ...)
 		}
 		if (*c == '%')
 		{
-			c++;
+			if (*(++c) == '\0')
+				return (-1);
 			f = getSpecifier(c);
 			if (f == NULL)
-				return (-1);
+			{
+				count += _putchar('%');
+				count += _putchar(*c);
+				continue;
+			}
 			count += f(args);
 			continue;
 		}
