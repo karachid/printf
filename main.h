@@ -28,5 +28,6 @@ int (*getSpecifier(char *s))(va_list ap);
 int print_string(va_list ap);
 int print_prct(va_list ap);
 int print_integer(va_list ap);
+unsigned int get_absolutevalue(int n);
 
 #endif

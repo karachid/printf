@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_integer - prints an integer
  * @ap: list of args
@@ -10,20 +9,19 @@ int print_integer(va_list ap)
 {
 	char *arr = "0123456789";
 	int n, count = 0, sign = 0, i = 0;
+	unsigned int un;
 	char str[30];
 
 	n = va_arg(ap, int);
+	un = get_absolutevalue(n);
 
 	if (n < 0)
-	{
 		sign = 1;
-		n *= -1;
-	}
 
-	while (n != 0)
+	while (un != 0)
 	{
-		str[i++] = arr[n % 10];
-		n /= 10;
+		str[i++] = arr[un % 10];
+		un /= 10;
 	}
 
 	if (i != 0)
