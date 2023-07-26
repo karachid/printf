@@ -14,11 +14,6 @@ int print_integer(va_list ap)
 
 	n = va_arg(ap, int);
 
-	if (n == 0)
-	{
-		_putchar('0');
-		return (1);	
-	}
 	if (n < 0)
 	{
 		sign = 1;
