@@ -33,6 +33,7 @@ int print_integer(va_list ap)
 		if (sign)
 		{
 			_putchar('-');
+			count++;
 		}
 		while (i >= 0)
 		{
