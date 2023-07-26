@@ -13,6 +13,8 @@ int (*getSpecifier(char *s))(va_list ap)
 		{"c", print_character},
 		{"s", print_string},
 		{"%", print_prct},
+		{"d", print_integer},
+		{"i", print_integer},
 		{NULL, NULL}
 	};
 
