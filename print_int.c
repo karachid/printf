@@ -40,5 +40,9 @@ int print_integer(va_list ap)
 			i--;
 		}
 	}
+	else
+	{
+		count += _putchar('0');
+	}
 	return (count);
 }
