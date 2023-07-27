@@ -15,6 +15,7 @@ int (*getSpecifier(char *s))(va_list ap)
 		{"%", print_prct},
 		{"d", print_integer},
 		{"i", print_integer},
+		{"b", print_binary},
 		{NULL, NULL}
 	};
 

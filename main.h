@@ -29,5 +29,7 @@ int print_string(va_list ap);
 int print_prct(va_list ap);
 int print_integer(va_list ap);
 unsigned int get_absolutevalue(int n);
+int print_binary(va_list ap);
+int uintToBinary(unsigned int n);
 
 #endif
