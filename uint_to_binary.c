@@ -16,7 +16,7 @@ int uintToBinary(unsigned int n)
 	if (n == 0)
 	{
 		_putchar('0');
-		return (0);
+		return (1);
 	}
 	for (i = 0; n > 0; i++)
 	{
